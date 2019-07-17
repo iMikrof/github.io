@@ -1193,7 +1193,9 @@
                             </style>
 
 
-                            <section id="con" class="doc" style="border-left: 2px solid #b7b7b7;    margin-top: 90px;padding-left: 15px;">
+                            <div id="con">
+
+                            <section  style="border-left: 2px solid #b7b7b7;    margin-top: 90px;padding-left: 15px;">
 
                                  <h4 style="text-align: center;"><b>MIS(Member Information System)</b></h4>
                                 <hr>
@@ -1415,7 +1417,8 @@
 
 
 
-                            </section>
+            </section>
+        </div>
 
 
 
@@ -3746,7 +3749,7 @@
     height: 100px;">
                                      <p>
                                         নিম্নলিখিত ASSET অ্যাকাউন্টের উদাহরণ:
-                                     </p>
+                                    </p>---------------------------------
                                       <img  src="assets/images/chart_of_account_two.png" style="width: 450px;
      height: 100px;">
                                       <p>
@@ -4195,7 +4198,7 @@ function printFullpage(divName)
         var divToPrint=document.getElementById(divName);
           var newWin=window.open('','Print-Window');
           newWin.document.open();
-          newWin.document.write('<html> <style type="text/css">body{margin:0px; text-align:center; } .area a , h1 ,p{font-size:20px; } a{ text-decoration:none;}a:link{color:black;}a:visited{color:black;} #text_style{margin-left:5%;}</style><body onload="window.print()">'+divToPrint.innerHTML+'</body></html>');
+          newWin.document.write('<html> <style type="text/css">body{margin:0px; line-height:40px;} .area a , h1 ,p{font-size:20px; } a{ text-decoration:none;}a:link{color:black;}a:visited{color:black;} #text_style{margin-left:5%;} </style><body onload="window.print()">'+divToPrint.innerHTML+'</body></html>');
           newWin.document.close();
 
 
